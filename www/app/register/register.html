@@ -1,6 +1,6 @@
-<ion-view view-title="Register" style="background-color: #1D69B7;">
-<ion-header-bar style="background-color: #1D69B7; color:#fff;">
-    <h1 class="title">Sign in to CHATT</h1>
+<ion-view view-title="Register" id="background">
+<ion-header-bar id="background">
+    <h1 class="title">Sign up to CHATT</h1>
     <div class="buttons">
       <div ng-click="goback()">
                 <button class="button button-clear close-btn"> 
@@ -10,27 +10,36 @@
             </div>
     </div>
   </ion-header-bar>
-  <ion-content scroll="false">
-    <div class="container" id="registerPage">
-        <div class="row">
-            <div class="col-xs-12 main-container">
-            <h1 class="text-center">CHATT</h1>
-                <form class="register-form">
-<div class="form-group has-feedback">
-    <input type="text" class="form-control" placeholder="EMAIL or USERNAME" />
-    <i class="glyphicon glyphicon-user form-control-feedback"></i>
-</div>
-<div class="form-group has-feedback">
-    <input type="password" class="form-control" placeholder="PASSWORD" />
-    <i class="glyphicon glyphicon-lock form-control-feedback"></i>
-</div>
-<button type="button" class="btn btn-default btn-lg btn-block register-btn">SIGN UP</button>
-<h4 class="text-center" style="color:#fff;">OR</h4>
-<button type="button" class="btn btn-default btn-lg btn-block google-btn"><span>CONNECT WITH</span> <i class="fa fa-google"></i></button>
-<button type="button" class="btn btn-default btn-lg btn-block facebook-btn"><span>CONNECT WITH</span> <i class="fa fa-facebook"></i></button>
-                </form>
-            </div>
+  <ion-content>
+      <div class="center-block w-xxl w-auto-xs">
+    <div class="p-lg panel md-whiteframe-z1 text-color m">
+      <div class="m-b text-sm">
+        Sign up to your CHATT Account
+      </div>
+      <form name="form">
+        <div class="md-form-group">
+          <input type="text" class="md-input"  required>
+          <label>Name</label>
         </div>
+        <div class="md-form-group">
+          <input type="email" class="md-input" required>
+          <label>Email</label>
+        </div>
+        <div class="md-form-group">
+          <input type="password" class="md-input" required>
+          <label>Password</label>
+        </div>
+        <div class="m-b-md">
+          <label class="md-check">
+            <input type="checkbox" required><i class="indigo"></i> Agree the <a href>terms and policy</a>
+          </label>
+        </div>
+        <button md-ink-ripple type="submit" class="md-btn md-raised pink btn-block p-h-md">Sign up</button>
+        <br>
+        <button type="button" class="md-btn md-raised red btn-block p-h-md google-btn"><span>CONNECT WITH</span> <i class="fa fa-google"></i></button>
+<button type="button" class="md-btn md-raised blue btn-block p-h-md facebook-btn"><span>CONNECT WITH</span> <i class="fa fa-facebook"></i></button>
+      </form>
     </div>
+  </div>
   </ion-content>
 </ion-view>

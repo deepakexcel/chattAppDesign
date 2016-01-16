@@ -1,26 +1,60 @@
-<ion-view view-title="Login" style="background-color: #1D69B7;">
+<ion-view view-title="Login" id="background">
+  <ion-content scroll="false">
+     <div class="center-block w-xxl w-auto-xs p-v-md">
+    <div class="navbar">
+      <div class="navbar-brand text-center">
+        <span class="inline white">CHATT</span>
+      </div>
+    </div>
+
+    <div class="p-lg panel md-whiteframe-z1 text-color m">
+      <div class="m-b text-sm">
+        Sign in with your CHATT Account
+      </div>
+      <form name="form">
+        <div class="md-form-group float-label">
+          <input type="email" class="md-input" ng-model="email" required>
+          <label>Email</label>
+        </div>
+        <div class="md-form-group float-label">
+          <input type="password" class="md-input" ng-model="password" required>
+          <label>Password</label>
+        </div>
+        <button md-ink-ripple type="submit" class="md-btn md-raised pink btn-block p-h-md" ng-click="login()">Sign in</button>
+      </form>
+    </div>
+
+    <div class="text-center">
+      <button class="md-btn white" ng-click="goRegister()">Create an account</button></div>
+    </div>
+  </div>
+  </ion-content>
+</ion-view>
+
+<!-- <ion-view view-title="Login" style="background-color: #BDBDBD;">
   <ion-content scroll="false">
     <div class="container" id="loginPage">
-    	<div class="row">
+    	<div class="">
     		<div class="col-xs-12 main-container">
     		<h1 class="text-center">CHATT</h1>
     			<form class="login-form">
-<div class="form-group has-feedback">
-    <input type="text" class="form-control" placeholder="USERNAME" />
+<div class="form-group has-feedback has-feedback-left">
+    <input type="text" class="form-control" placeholder="EMAIL" />
     <i class="glyphicon glyphicon-user form-control-feedback"></i>
 </div>
 <div class="form-group has-feedback">
     <input type="password" class="form-control" placeholder="PASSWORD" />
     <i class="glyphicon glyphicon-lock form-control-feedback"></i>
 </div>
-<button type="button" class="btn btn-default btn-lg btn-block login-btn">LOGIN</button>
+<button type="button" class="btn btn-default btn-md btn-block login-btn" ng-click="login()">LOGIN</button>
 				</form>
 				<div class="login-footer text-center">
 					<p>NEW MEMBER?</p>
-					<h3><a href="#/register">SIGN UP HERE</a></h3>
+					<h4><a href="#/register">SIGN UP HERE</a></h4>
 				</div>
     		</div>
     	</div>
     </div>
   </ion-content>
 </ion-view>
+ -->
