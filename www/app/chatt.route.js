@@ -1,7 +1,7 @@
 (function() {
     'use strict';
 
-angular.module('starter', ['ionic'])
+angular.module('starter', ['ionic', 'ngStorage'])
 
 .config(function($stateProvider, $urlRouterProvider) {
   $stateProvider
@@ -35,13 +35,13 @@ angular.module('starter', ['ionic'])
       }
     }
   })
-  .state('app.chat', {
-      url: '/chat',
+  .state('app.chatpage', {
+      url: '/chatpage',
       cache:false,
       views: {
         'menuContent': {
-          templateUrl: 'app/chat/chat.html',
-          controller: 'chatController'
+          templateUrl: 'app/chatpage/chatpage.html',
+          controller: 'chatpageController'
         }
       }
     })
@@ -52,6 +52,16 @@ angular.module('starter', ['ionic'])
         'menuContent': {
           templateUrl: 'app/setting/setting.html',
           controller: 'settingController'
+        }
+      }
+    })
+  .state('app.chats', {
+      url: '/chats',
+      cache:false,
+      views: {
+        'menuContent': {
+          templateUrl: 'app/chats/chats.html',
+          controller: 'chatsController'
         }
       }
     })

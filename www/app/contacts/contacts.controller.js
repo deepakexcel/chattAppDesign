@@ -6,6 +6,5 @@
 
     function contactsController($scope, $rootScope, $state) {
             console.log('contactsController');
-            $rootScope.footerMenu = true;
     }
 })();

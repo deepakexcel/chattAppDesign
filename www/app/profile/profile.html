@@ -1,10 +1,48 @@
 <ion-view view-title="PROFILE">
+  <ion-content id="profile">
+   <div style="width:100%;">
+  <div class="col-md-12 col-sm-12 col-xs-12">
+    <div class="panel panel-card">
+      <div class="r-t pos-rlt" md-ink-ripple style="background:url(lib/images/a0.jpg) center center; background-size:cover">
+        <div class="p-lg bg-white-overlay text-center r-t">
+          <a href class="w-xs inline">
+            <img src="lib/images/a0.jpg" class="img-circle img-responsive">
+          </a>
+          <div class="m-b m-t-sm h2">
+            <span class="">David M.</span>
+          </div>
+          <a class="btn btn-sm btn-success m-b p-h no-border">Edit</a>
+        </div>
+      </div>
+      <div class="pad">
+        <p><strong>STATUS</strong></p>
+        <p>This is my status <i class="icon ion-edit pull-right" style="font-size:20px;"></i></p>
+
+      </div>
+    </div>
+  </div>
+  </div>
+  </ion-content>
+</ion-view>
+ 
+ <!-- <ion-view view-title="PROFILE">
   <ion-content>
- 	 <div class="row">
-       <div class="col-xs-12">
+ 	 <div id="profile">
            <img src="http://lorempixel.com/640/480/abstract/">
-           <h1><i class="ion ion-edit"></i></h1>
-       </div>  
+           <h2><i class="ion ion-edit"></i></h2>
+     </div>
+     <div class="list">
+     	<span class="item item-icon-right name">
+     <span ng-hide="userNameEditing">USER NAME</span>
+      <span ng-show="userNameEditing"><input type="text" ng-model="name" class="form-control"></span>
+    <i class="icon ion-edit" style="font-size:24px;" ng-click="userNameEditing =! userNameEditing"></i>
+  		</span>
+     	<span class="item item-icon-right name">
+     <span ng-hide="userStatusEditing">THIS IS MY STATUS</span>
+      <span ng-show="userStatusEditing"><input type="text" ng-model="name" class="form-control"></span>
+    <i class="icon ion-edit" style="font-size:24px;" ng-click="userStatusEditing =! userStatusEditing"></i>
+  		</span>
      </div>
   </ion-content>
 </ion-view>
+ -->

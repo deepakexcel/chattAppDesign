@@ -2,11 +2,10 @@
     'use strict';
 
     angular.module('starter')
-        .controller('chatController', chatController);
+        .controller('chatpageController', chatpageController);
 
-    function chatController($scope, $rootScope, $state, $timeout, $ionicScrollDelegate) {
-            console.log('Chat');
-            $rootScope.footerMenu = false;
+    function chatpageController($scope, $rootScope, $state, $timeout, $ionicScrollDelegate) {
+            console.log('Chat Page');
             $scope.login = function(){
             	$state.go('app.contacts');
             }

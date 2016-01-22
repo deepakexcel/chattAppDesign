@@ -5,7 +5,13 @@
 	color: #fff;
 }
 .bar-footer{
-	height: 49px!important;
+	height: 50px!important;
+}
+.ion-ios-arrow-back{
+	color: #fff!important;
+}
+.back-button{
+	color: #fff!important;	
 }
 *{
 	font-family: 'Montserrat', sans-serif;
@@ -110,20 +116,13 @@
 	color: #fff;
 	border: 2px solid #fff;
 }
-#registerPage .main-container .register-form .google-btn{
-	margin-top: 5px;
-	background: #BDBDBD;
+.google-btn{
+	background: #F11505!important;
 	color: #fff;
-	border: 2px solid #fff;
 }
-#registerPage .main-container .register-form .google-btn span{
-	font-size: 14px;
-}
-#registerPage .main-container .register-form .facebook-btn{
-	margin-top: 5px;
-	background: #BDBDBD;
+.facebook-btn{
+	background: #3A5795!important;
 	color: #fff;
-	border: 2px solid #fff;
 }
 #registerPage .main-container .register-form .facebook-btn span{
 	font-size: 14px;
@@ -170,6 +169,22 @@ a.tab-item:hover{
 text-decoration: none;
 }
 /*chat page css*/
+.chatpage-header{
+	color: #fff!important;
+}
+.chatpage-header i{
+	color: #fff!important;
+}
+.chatpage-header p{
+	line-height: 16px;
+}
+.chatpage-header img{
+	max-width:40px;
+	padding-right: 6px;
+}
+.chatpage-header p span{
+	font-size: 10px;
+}
 .left-chat{
 	float:left; 
 	clear:both; 
@@ -188,8 +203,8 @@ text-decoration: none;
     width: 40px;
 }
 .bubble-yellow {
-    background-color: #FFC107;
-    border-color: #FFC107;
+    background-color: #A29E39;
+    border-color: #A29E39;
     border-radius: 5px;
     display: inline-block;
     margin: 10px 10px 0px 10px;
@@ -197,13 +212,21 @@ text-decoration: none;
     vertical-align: top;
 }
 .bubble-blue {
-    background-color: #2196F3;
-    border-color: #2196F3;
+    background-color: #78C9A7;
+    border-color: #78C9A7;
     border-radius: 5px;
     display: inline-block;
     margin: 10px 10px 0px 10px;
     padding: 10px 18px;
     vertical-align: top;
+}
+.left-chat p{
+	white-space:pre;
+	max-width: 11em;
+}
+.right-chat p{
+	white-space:pre;
+	max-width: 11em;
 }
 .left-chat p.chat-time{
 	padding-left: 50px;
@@ -252,4 +275,39 @@ text-decoration: none;
 	background: #fff;
 	color: #3F51B5;
 	padding-left: 10px;
+}
+
+
+/*Setting Page Css*/
+#setting a.item{
+	padding: 8px 54px 8px 8px!important;
+	border: 1px solid #ddd!important;
+}#setting a i{
+	color: #ddd!important;
+	font-size: 24px;
+}
+
+/*Profile Page Css*/
+#profile .pad{
+	padding: 16px 0px 16px 0px;
+}
+span.name{
+	border: 1px solid #A9A9A9!important;
+	border-radius: 5px;
+	margin-left: 2%;
+	margin-right: 2%;
+	margin-bottom: 2%;
+	padding: 8px 54px 8px 8px!important;
+}
+span.name input{
+	border: 1px solid #3F51B5!important;
+}
+
+/*Chats Css*/
+#chats .time{
+	font-size: 12px;
+}
+#chats .item{
+	border-bottom:1px solid #ddd!important;
+	margin-top: 1px;
 }
