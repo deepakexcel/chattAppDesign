@@ -1,7 +1,7 @@
 (function() {
     'use strict';
 
-angular.module('starter', ['ionic', 'ngStorage'])
+angular.module('starter', ['ionic', 'ngStorage', 'ngResource', 'GoogleLoginService', 'facebookLoginService'])
 
 .config(function($stateProvider, $urlRouterProvider) {
   $stateProvider
@@ -17,6 +17,24 @@ angular.module('starter', ['ionic', 'ngStorage'])
     cache:false,
     templateUrl: 'app/register/register.html',
     controller: 'registerController'
+  })
+    .state('verification', {
+    url: '/verification',
+    cache:false,
+    templateUrl: 'app/verification/verification.html',
+    controller: 'verificationController'
+  })
+    .state('resetPassword', {
+    url: '/resetPassword',
+    cache:false,
+    templateUrl: 'app/resetpassword/resetpassword.html',
+    controller: 'resetPasswordController'
+  })
+    .state('resendVerificationCode', {
+    url: '/resendVerificationCode',
+    cache:false,
+    templateUrl: 'app/resendverificationcode/resendverificationcode.html',
+    controller: 'resendVerificationCodeController'
   })
     .state('app', {
     url: '/app',

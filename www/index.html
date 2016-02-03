@@ -10,7 +10,7 @@
     
   <!-- Material-angular css -->
   <link rel="stylesheet" href="lib/animate.css/animate.css" type="text/css" />
-  <link rel="stylesheet" href="lib/angular-loading-bar/build/loading-bar.css" type="text/css" />
+
   <link rel="stylesheet" href="lib/angular-material/angular-material.css" type="text/css" />
   <link rel="stylesheet" href="lib/material-design-icons.css" type="text/css" />
   <link rel="stylesheet" href="lib/app.min.css" type="text/css" />
@@ -31,19 +31,36 @@
     <!-- cordova script (this will be a 404 during development) -->
     <script src="cordova.js"></script>
 
+    <!-- lib files -->
+    <script src="app/lib/angular-resource.js"></script>
+
     <!-- your app's js -->
     <script src="app/chatt.route.js"></script>
     <script src="app/chatt.run.js"></script>
     <script src="app/chatt.config.js"></script>
+    <script src="app/chatt.constant.js"></script>
     <script src="app/login/login.controller.js"></script>
+    <script src="app/login/login.factory.js"></script>
     <script src="app/register/register.controller.js"></script>
+    <script src="app/register/register.factory.js"></script>
     <script src="app/chatpage/chatpage.controller.js"></script>
     <script src="app/contacts/contacts.controller.js"></script>
     <script src="app/setting/setting.controller.js"></script>
     <script src="app/profile/profile.controller.js"></script>
     <script src="app/chats/chats.controller.js"></script>
-    <script src="app/common/service.js"></script>
+    <script src="app/verification/verification.controller.js"></script>
+    <script src="app/verification/verification.factory.js"></script>
+    <script src="app/resendverificationcode/resendverificationcode.controller.js"></script>
+    <script src="app/resendverificationcode/resendverificationcode.factory.js"></script>
+    <script src="app/resetpassword/resetpassword.controller.js"></script>
+    <script src="app/resetpassword/resetpassword.factory.js"></script>
     <script src="app/common/ngStorage.min.js"></script>
+    <script src="app/common/google_login.service.js"></script>
+    <script src="app/common/facebook_login.service.js"></script>
+    <script src="app/common/localstorage.service.js"></script>
+    <script src="app/common/tost.service.js"></script>
+    <script src="app/common/ajax.service.js"></script>
+    <script src="app/common/device.service.js"></script>
   </head>
 
   <body ng-app="starter">

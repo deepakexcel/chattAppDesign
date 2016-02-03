@@ -1,53 +1,11 @@
 <ion-view view-title="CHATS" id="background">
   <ion-content>
  	 <div class="list" id="chats">
-      <div class="user-container">
+      <div class="user-container" ng-repeat="chat in displayChats">
         <a class="item item-avatar hover" href="#/app/chatpage">
-          <img class="avatar" src="lib/images/a3.jpg">
-          <h3>CHAT 1 <span class="pull-right time">2:46 PM</span></h3>
-          <p>LAST MESSAGE</p>
-        </a>
-      </div>
-      <div class="user-container">
-        <a class="item item-avatar hover" href="#/app/chatpage">
-          <img class="avatar" src="lib/images/a4.jpg">
-          <h3>CHAT 2 <span class="pull-right time">12:14 AM</span></h3>
-          <p>LAST MESSAGE</p>
-        </a>
-      </div>
-      <div class="user-container">
-        <a class="item item-avatar hover" href="#/app/chatpage">
-          <img class="avatar" src="lib/images/a5.jpg">
-          <h3>CHAT 3 <span class="pull-right time">YESTERDAY</span></h3>
-          <p>LAST MESSAGE</p>
-        </a>
-      </div>
-      <div class="user-container">
-        <a class="item item-avatar hover" href="#/app/chatpage">
-          <img class="avatar" src="lib/images/a5.jpg">
-          <h3>GROUP 1 <span class="pull-right time">02/01/206</span></h3>
-          <p>USER 1: LAST MESSAGE</p>
-        </a>
-      </div>
-      <div class="user-container">
-        <a class="item item-avatar hover" href="#/app/chatpage">
-          <img class="avatar" src="lib/images/a5.jpg">
-          <h3>GROUP 2 <span class="pull-right time">26/12/2015</span></h3>
-          <p>USER 2: LAST MESSAGE</p>
-        </a>
-      </div>
-      <div class="user-container">
-        <a class="item item-avatar hover" href="#/app/chatpage">
-          <img class="avatar" src="lib/images/a5.jpg">
-          <h3>CHAT 4 <span class="pull-right time">YESTERDAY</span></h3>
-          <p>LAST MESSAGE</p>
-        </a>
-      </div>
-      <div class="user-container">
-        <a class="item item-avatar hover" href="#/app/chatpage">
-          <img class="avatar" src="lib/images/a5.jpg">
-          <h3>CHAT 5 <span class="pull-right time">YESTERDAY</span></h3>
-          <p>LAST MESSAGE</p>
+          <img class="avatar" src="{{chat.image}}">
+          <h3>{{chat.user}} <span class="pull-right time">{{chat.messageTime}}</span></h3>
+          <p>{{chat.message}}</p>
         </a>
       </div>
     </div>

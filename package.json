@@ -20,7 +20,11 @@
     "cordova-plugin-whitelist",
     "cordova-plugin-splashscreen",
     "cordova-plugin-statusbar",
-    "ionic-plugin-keyboard"
+    "ionic-plugin-keyboard",
+    {
+      "locator": "/var/www/html/facebook_plugin",
+      "id": "phonegap-facebook-plugin"
+    }
   ],
   "cordovaPlatforms": [
     "android"

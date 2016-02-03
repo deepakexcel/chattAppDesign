@@ -1,77 +1,13 @@
 <ion-view view-title="CONTACTS" id="background">
   <ion-content scroll="true">
  	 <div class="list">
- 	 		<div class="user-container">
+ 	 		<div class="user-container" ng-repeat="contact in displaycontacts">
                 <a class="item item-avatar hover item-icon-right" href="#/app/chatpage">
-                    <img class="avatar" src="lib/images/a3.jpg">
-                        <h3>USER 1</h3>
-                        <p>This is my status. I am not feeling well.</p>
+                    <img class="avatar" src="{{contact.image}}">
+                        <h3>{{contact.userName}}</h3>
+                        <p>{{contact.status}}</p>
                     </a>
-                   </div>
- 	 		<div class="user-container">
-                <a class="item item-avatar hover item-icon-right" href="#/app/chatpage">
-                    <img class="avatar" src="lib/images/a4.jpg">
-                        <h3>USER 1</h3>
-                        <p>This is my status. I am not feeling well.</p>
-                    </a>
-                   </div>
- 	 		<div class="user-container">
-                <a class="item item-avatar hover item-icon-right" href="#/app/chatpage">
-                    <img class="avatar" src="lib/images/a5.jpg">
-                        <h3>USER 1</h3>
-                        <p>This is my status. I am not feeling well.</p>
-                    </a>
-                   </div>
- 	 		<div class="user-container">
-                <a class="item item-avatar hover item-icon-right" href="#/app/chatpage">
-                    <img class="avatar" src="lib/images/a6.jpg">
-                        <h3>USER 1</h3>
-                        <p>This is my status. I am not feeling well.</p>
-                    </a>
-                   </div>
- 	 		<div class="user-container">
-                <a class="item item-avatar hover item-icon-right" href="#/app/chatpage">
-                    <img class="avatar" src="lib/images/a7.jpg">
-                        <h3>USER 1</h3>
-                        <p>This is my status. I am not feeling well.</p>
-                    </a>
-                   </div>
- 	 		<div class="user-container">
-                <a class="item item-avatar hover item-icon-right" href="#/app/chatpage">
-                    <img class="avatar" src="lib/images/a8.jpg">
-                        <h3>USER 1</h3>
-                        <p>This is my status. I am not feeling well.</p>
-                    </a>
-                   </div>
- 	 		<div class="user-container">
-                <a class="item item-avatar hover item-icon-right" href="#/app/chatpage">
-                    <img class="avatar" src="lib/images/a9.jpg">
-                        <h3>USER 1</h3>
-                        <p>This is my status. I am not feeling well.</p>
-                    </a>
-                   </div>
- 	 		<div class="user-container">
-                <a class="item item-avatar hover item-icon-right" href="#/app/chatpage">
-                    <img class="avatar" src="lib/images/a5.jpg">
-                        <h3>USER 1</h3>
-                        <p>This is my status. I am not feeling well.</p>
-                    </a>
-                   </div>
- 	 		<div class="user-container">
-                <a class="item item-avatar hover item-icon-right" href="#/app/chatpage">
-                    <img class="avatar" src="lib/images/a8.jpg">
-                        <h3>USER 1</h3>
-                        <p>This is my status. I am not feeling well.</p>
-                    </a>
-                   </div>
- 	 		<div class="user-container">
-                <a class="item item-avatar hover item-icon-right" href="#/app/chatpage">
-                    <img class="avatar" src="lib/images/a3.jpg">
-                        <h3>USER 1</h3>
-                        <p>This is my status. I am not feeling well.</p>
-                    </a>
-                   </div>
-                
+                   </div>                
                 </div>
   </ion-content>
   <ion-footer-bar class="bar-stable">
